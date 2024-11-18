@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Navbar from './components/navbar';
 
@@ -11,8 +11,8 @@ export default function Main() {
   const [index, setIndex] = useState(0);
 
   const pages = [
-    <Home/>,
-    <About/>
+    <Home key="0"/>,
+    <About key="1"/>
   ]
 
   return (

@@ -1,7 +1,7 @@
 import MiniTechBox from './miniTechBox';
 import Link from './link';
 
-export default function Project({ title, discription, tech, image, liveDemo, sourceCode }) {
+export default function Project({ title, discription, tech, image, liveDemo, sourceCode }: { title: string, discription: string, tech: Array<string>, image: string, liveDemo: string, sourceCode: string }) {
   return (
     <div className="flex flex-col h-max w-full max-w-full">
       <div className="min-h-full w-full min-w-64 overflow-hidden">

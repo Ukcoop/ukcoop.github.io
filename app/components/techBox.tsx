@@ -1,3 +1,5 @@
+type Techs = Record<string, { borderColor: string, background: string, textColor: string, discription: string, icon: JSX.Element }>;
+
 import { BiLogoTypescript } from "react-icons/bi";
 import { SiSolidity } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
@@ -10,7 +12,7 @@ import { FaHardHat } from "react-icons/fa";
 import { SiEthers } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 
-const techs = {
+const techs: Techs = {
   Typescript: {
     borderColor: "border-blue-500",
     background: "bg-blue-500/20",
@@ -36,7 +38,7 @@ const techs = {
     borderColor: "border-sky-500",
     background: "bg-sky-500/20",
     textColor: "text-sky-400",
-    discription: "Styleing",
+    discription: "Styling",
     icon: <SiTailwindcss className="text-sky-400 text-3xl"/>
   },
   "Next js": {
@@ -83,7 +85,7 @@ const techs = {
   }
 }
 
-export default function TechBox({ name }) {
+export default function TechBox({ name }: { name: string }) {
   const boxClass = `flex flex-row items-center justify-center w-max h-14 px-4 mr-2 mb-2 ${techs[name].background} border-2 ${techs[name].borderColor}`;
 
   return (

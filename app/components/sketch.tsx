@@ -1,11 +1,12 @@
 'use client';
 
 import { useRef, useEffect, useState } from 'react';
-import p5 from 'p5';
+const p5: any = require('p5');
+//import p5 from 'p5';
 
 export default function Sketch() {
-  const sketchRef = useRef();
-  const containerRef = useRef();
+  const sketchRef: any = useRef();
+  const containerRef: any = useRef();
   const [canvasWidth, setCanvasWidth] = useState(0);
   const [canvasHeight, setCanvasHeight] = useState(0);
 
@@ -24,7 +25,7 @@ export default function Sketch() {
   }, []);
 
   useEffect(() => {
-    const Sketch = (p) => {
+    const Sketch = (p: any) => {
       let canvas;
       let d = 0;
 

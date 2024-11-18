@@ -1,10 +1,14 @@
-export default function Link({ text, style, to }) {
-  const styles = {
+type Styles = Record<string, string>;
+
+export default function Link({ text, style, to }: { text: string, style: string, to: string }) {
+  const styles: Styles = {
     primary: 'flex flex-row items-center justify-center w-max h-14 px-4 mr-2 mb-2 bg-stone-400 text-black',
-    secondary: 'flex flex-row items-center justify-center w-max h-14 px-4 mr-2 mb-2 bg-stone-400/20 text-stone-400'
-  }
+    secondary: 'flex flex-row items-center justify-center w-max h-14 px-4 mr-2 mb-2 bg-stone-400/20 text-stone-400',
+  };
 
   return (
-    <a className={styles[style]} href={to}>{text}</a>    
+    <a className={styles[style]} href={to}>
+      {text}
+    </a>
   );
 }

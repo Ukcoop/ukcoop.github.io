@@ -1,4 +1,6 @@
-const techs = {
+type Techs = Record<string, { background: string, textColor: string }>;
+
+const techs: Techs = {
   Typescript: {
     background: "bg-blue-500/20",
     textColor: "text-blue-400",
@@ -42,7 +44,7 @@ const techs = {
 }
 
 
-export default function MiniTechBox({ name }) {
+export default function MiniTechBox({ name }: { name: string }) {
   const boxClass = `flex flex-row items-center justify-center w-max h-8 px-2 mr-2 mb-2 ${techs[name].background}`;
   
   return (
