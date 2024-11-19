@@ -33,6 +33,14 @@ const techs: Techs = {
     background: "bg-indigo-500/20",
     textColor: "text-indigo-400",
   },
+  "Uniswap V2 & forks": {
+    background: "bg-pink-500/20",
+    textColor: "text-pink-400",
+  },
+  Chainlink: {
+    background: "bg-blue-500/20",
+    textColor: "text-blue-400",
+  },
   Hardhat: {
     background: "bg-yellow-500/20",
     textColor: "text-yellow-400",

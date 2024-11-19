@@ -11,7 +11,7 @@ export default function Home() {
       <div className="sm:pt-10 sm:px-10 pt-5 px-2">
         <a className="sm:text-3xl text-2xl">Languages</a>
         <div className="h-0 border border-stone-500 my-2"></div>
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-col sm:flex-row flex-wrap">
         {
           ["Typescript", "Solidity", "Javascript", "Tailwind css"].map((name, index) => {
             return (<TechBox key={index} name={name}/>);
@@ -20,11 +20,22 @@ export default function Home() {
         </div>
       </div>
       <div className="sm:pt-10 sm:px-10 pt-5 px-2">
-        <a className="sm:text-3xl text-2xl">Frameworks and tools</a>
+        <a className="sm:text-3xl text-2xl">Blockchain technologies and tools</a>
         <div className="h-0 border border-stone-500 my-2"></div>
-        <div className="flex flex-row flex-wrap">
+        <div className="flex flex-col sm:flex-row flex-wrap">
         {
-          ["Next js", "Foundry", "Slither", "Ethers js", "Hardhat", "Node js"].map((name, index) => {
+          ["Foundry", "Slither", "Ethers js", "Uniswap V2 & forks", "Chainlink", "Hardhat"].map((name, index) => {
+            return (<TechBox key={index} name={name}/>);
+          })
+        }
+        </div>
+      </div>
+      <div className="sm:pt-10 sm:px-10 pt-5 px-2">
+        <a className="sm:text-3xl text-2xl">Other frameworks and tools</a>
+        <div className="h-0 border border-stone-500 my-2"></div>
+        <div className="flex flex-col sm:flex-row flex-wrap">
+        {
+          ["Next js", "Node js"].map((name, index) => {
             return (<TechBox key={index} name={name}/>);
           })
         }
@@ -39,7 +50,6 @@ export default function Home() {
             return (<Project key={index} title={project.title} discription={project.discription} tech={project.techUsed} image={project.image} liveDemo={project.liveDemo} sourceCode={project.sourceCode}/>);
           })
         }
-          
         </div>
       </div>
     </div>

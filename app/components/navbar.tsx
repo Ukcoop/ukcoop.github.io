@@ -17,7 +17,7 @@ function Vertical({ text, index, setIndex }: { text: string, index: number, setI
 
 export default function Navbar({ setIndex }: { setIndex: (index: number) => void }) {
   return (
-    <div className="pb-2 sm:min-w-10 min-w-8 h-svh max-h-svh bg-gray-100 dark:bg-gray-800 shadow-xl overflow-auto">
+    <div className="pb-2 sm:min-w-10 min-w-8 h-svh max-h-svh bg-gray-200 dark:bg-gray-800 shadow-xl overflow-auto">
       <Vertical text="HOME" index={0} setIndex={setIndex} />
       <Vertical text="ABOUT" index={1} setIndex={setIndex} />
     </div>
