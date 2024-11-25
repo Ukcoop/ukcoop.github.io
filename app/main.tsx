@@ -17,7 +17,7 @@ export default function Main() {
 
   return (
     <div className="flex flex-row h-svh max-h-svh overflow-crop">
-      <Navbar setIndex={setIndex}/>
+      <Navbar currentIndex={index} setIndex={setIndex}/>
       {pages[index]}
     </div> 
   );
