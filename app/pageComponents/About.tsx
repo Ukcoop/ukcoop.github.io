@@ -1,5 +1,3 @@
-import info from '../json/info.json';
-
 export default function About() {
   return (
     <div className="w-full h-svh overflow-auto">    
