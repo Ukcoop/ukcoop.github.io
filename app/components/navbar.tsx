@@ -4,7 +4,7 @@ function Vertical({ text, index, currentIndex, setIndex }: { text: string, index
   return (
     <div
       onClick={() => setIndex(index)}
-      className={`py-1 my-1 mx-1 flex flex-col items-center border-2 border-transparent rounded-md ${isActive}`}
+      className={`py-1 my-1 flex flex-col items-center border-2 border-transparent rounded-md ${isActive}`}
     >
       {text.split('').map((char, i) => (
         <div
