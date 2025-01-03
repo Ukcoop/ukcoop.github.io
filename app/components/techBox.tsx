@@ -1,17 +1,20 @@
 type Techs = Record<string, { borderColor: string, background: string, textColor: string, discription: string, icon: JSX.Element }>;
 
 import { BiLogoTypescript } from "react-icons/bi";
-import { SiSolidity } from "react-icons/si";
+//import { SiSolidity } from "react-icons/si";
 import { BiLogoJavascript } from "react-icons/bi";
+import { FaRust } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 
 import { RiNextjsFill } from "react-icons/ri";
-import { GiAnvil } from "react-icons/gi";
-import { GiSnake } from "react-icons/gi";
-import { FaHardHat } from "react-icons/fa";
-import { SiEthers } from "react-icons/si";
-import { SiChainlink } from "react-icons/si";
-import { GiUnicorn } from "react-icons/gi";
+import { SiDocker } from "react-icons/si";
+import { GiWoodenCrate } from "react-icons/gi";
+//import { GiAnvil } from "react-icons/gi";
+//import { GiSnake } from "react-icons/gi";
+//import { FaHardHat } from "react-icons/fa";
+//import { SiEthers } from "react-icons/si";
+//import { SiChainlink } from "react-icons/si";
+//import { GiUnicorn } from "react-icons/gi";
 import { SiNodedotjs } from "react-icons/si";
 
 const techs: Techs = {
@@ -22,19 +25,27 @@ const techs: Techs = {
     discription: "General purpose",
     icon: <BiLogoTypescript className="text-blue-400 text-3xl"/>
   },
-  Solidity: {
+/*  Solidity: {
     borderColor: "border-violet-500",
     background: "bg-violet-500/10",
     textColor: "text-violet-400",
     discription: "Smart contracts",
     icon: <SiSolidity className="text-violet-400 text-3xl"/>
   },
+*/
   Javascript: {
     borderColor: "border-yellow-500",
     background: "bg-yellow-500/10",
     textColor: "text-yellow-400",
     discription: "General purpose",
     icon: <BiLogoJavascript className="text-yellow-400 text-3xl"/>
+  },
+  Rust: {
+    borderColor: "border-orange-500",
+    background: "bg-orange-500/10",
+    textColor: "text-orange-400",
+    discription: "General purpose",
+    icon: <FaRust className="text-orange-400 text-3xl"/>
   },
   "Tailwind css": {
     borderColor: "border-sky-500",
@@ -50,6 +61,21 @@ const techs: Techs = {
     discription: "Full stack",
     icon: <RiNextjsFill className="text-black dark:text-white text-3xl"/>
   },
+  Docker: {
+    borderColor: "border-sky-500",
+    background: "bg-sky-500/10",
+    textColor: "text-sky-400",
+    discription: "Deployments",
+    icon: <SiDocker className="text-sky-400 text-3xl"/>
+  },
+  Cargo: {
+    borderColor: "border-yellow-500",
+    background: "bg-yellow-500/10",
+    textColor: "text-yellow-400",
+    discription: "Rust development",
+    icon: <GiWoodenCrate className="text-yellow-400 text-3xl"/>
+  },
+/*
   Foundry: {
     borderColor: "border-orange-500",
     background: "bg-orange-500/10",
@@ -92,6 +118,7 @@ const techs: Techs = {
     discription: "Local EVM node",
     icon: <FaHardHat className="text-yellow-400 text-3xl"/>
   },
+*/
   "Node js": {
     borderColor: "border-green-500",
     background: "bg-green-500/10",

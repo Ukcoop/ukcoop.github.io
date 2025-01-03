@@ -24,13 +24,14 @@ export default function Home() {
         <div className="h-0 border border-stone-500 my-2"></div>
         <div className="flex flex-col sm:flex-row flex-wrap">
         {
-          ["Typescript", "Solidity", "Javascript", "Tailwind css"].map((name, index) => {
+          ["Typescript", "Rust", "Javascript", "Tailwind css"].map((name, index) => {
             return (<TechBox key={index} name={name}/>);
           })
         }
         </div>
       </div>
-      <div className="sm:pt-10 sm:px-10 pt-5 px-2">
+       {/*
+        <div className="sm:pt-10 sm:px-10 pt-5 px-2">
         <a className="sm:text-3xl text-2xl">Blockchain technologies and tools</a>
         <div className="h-0 border border-stone-500 my-2"></div>
         <div className="flex flex-col sm:flex-row flex-wrap">
@@ -41,12 +42,13 @@ export default function Home() {
         }
         </div>
       </div>
+      */}
       <div className="sm:pt-10 sm:px-10 pt-5 px-2">
-        <a className="sm:text-3xl text-2xl">Other frameworks and tools</a>
+        <a className="sm:text-3xl text-2xl">Frameworks and tools</a>
         <div className="h-0 border border-stone-500 my-2"></div>
         <div className="flex flex-col sm:flex-row flex-wrap">
         {
-          ["Next js", "Node js"].map((name, index) => {
+          ["Next js", "Node js", "Docker", "Cargo"].map((name, index) => {
             return (<TechBox key={index} name={name}/>);
           })
         }

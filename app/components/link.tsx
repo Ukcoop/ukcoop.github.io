@@ -7,7 +7,7 @@ export default function Link({ text, style, to }: { text: string, style: string,
   };
 
   return (
-    <a className={styles[style]} href={to}>
+    <a className={styles[style]} target="_blank" href={to}>
       {text}
     </a>
   );

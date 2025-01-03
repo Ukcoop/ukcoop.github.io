@@ -5,13 +5,18 @@ const techs: Techs = {
     background: "bg-blue-500/20",
     textColor: "text-blue-400",
   },
-  Solidity: {
+/*  Solidity: {
     background: "bg-violet-500/20",
     textColor: "text-violet-400",
   },
+*/
   Javascript: {
     background: "bg-yellow-500/20",
     textColor: "text-yellow-400",
+  },
+  Rust: {
+    background: "bg-orange-500/20",
+    textColor: "text-orange-400",
   },
   "Tailwind css": {
     background: "bg-sky-500/20",
@@ -21,7 +26,11 @@ const techs: Techs = {
     background: "bg-black/20 dark:bg-white/20",
     textColor: "text-black dark:text-white",
   },
-  Foundry: {
+  Cargo: {
+    background: "bg-yellow-500/20",
+    textColor: "text-yellow-400",
+  },
+/*  Foundry: {
     background: "bg-orange-500/20",
     textColor: "text-orange-400",
   },
@@ -45,6 +54,7 @@ const techs: Techs = {
     background: "bg-yellow-500/20",
     textColor: "text-yellow-400",
   },
+*/
   "Node js": {
     background: "bg-green-500/20",
     textColor: "text-green-400",
