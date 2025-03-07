@@ -14,19 +14,19 @@ enum Route {
 }
 
 fn switch(routes: Route) -> Html {
-    return match routes {
+    match routes {
         Route::Home => pages::home::home(),
         Route::NotFound => pages::not_found::not_found(),
-    };
+    }
 }
 
 #[function_component(Main)]
 fn app() -> Html {
-    return html! {
-        <BrowserRouter>
+    html! {
+        <HashRouter>
             <Switch<Route> render={switch} />
-        </BrowserRouter>
-    };
+        </HashRouter>
+    }
 }
 
 fn main() {
