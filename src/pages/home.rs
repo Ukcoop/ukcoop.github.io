@@ -1,9 +1,11 @@
-use yew::{html, Html};
+use yew::{Html, html};
+
+use crate::components::sections::hero::HeroSection;
 
 pub fn home() -> Html {
     return html! {
-        <div class="flex flex-col p-5 h-screen max-h-screen bg-white dark:bg-gray-950">
-            <a class="text-2xl">{"Hello there, this is the homepage of my personal website."}</a>
+        <div class="h-screen">
+            <HeroSection />
         </div>
     };
 }

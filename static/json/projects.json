@@ -1,0 +1,12 @@
+{
+  "projects": [
+    {
+      "title": "Advent of code 2024 with rust",
+      "discription": "this is all of my code for my go at the advent of code 2024!",
+      "tech_used": ["Rust", "Cargo"],
+      "image": "stars-collected.png",
+      "live_demo": "",
+      "source_code": "https://github.com/Ukcoop/advent-of-code-2024-rs"
+    }
+  ]
+}
