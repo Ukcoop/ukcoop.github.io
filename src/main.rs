@@ -2,8 +2,8 @@ use yew::prelude::*;
 use yew_router::prelude::*;
 
 mod components;
-mod core;
 mod pages;
+mod shared;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {

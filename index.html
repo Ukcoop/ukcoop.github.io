@@ -2,6 +2,29 @@
 <html>
     <head>
         <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+        <script>
+            var d = 0;
+            let myCanvas;
+
+            function setup() {
+                myCanvas = createCanvas(400, 400);
+                background(100);
+                noStroke();
+            }
+
+            function draw() {
+                if(d > 400){
+                    d = 0;
+                }
+
+                rect(random(10,400),d,10,20);
+                d = d+1;
+                if(d === 400);{
+                    fill(random(0,255),random(0,255),random(0,255));
+                }
+            }
+        </script>
         <meta charset="utf-8" />
         <title>Alexander Cooper</title>
         <link data-trunk rel="copy-dir" href="static" />

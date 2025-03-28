@@ -1,39 +1,34 @@
-use wasm_bindgen_futures::spawn_local;
-use yew::{Html, function_component, html, use_effect_with, use_state};
-
-use crate::core::fetch_projects::{Projects, fetch_projects};
+use yew::{Html, function_component, html, use_state};
 
 use crate::components::portfolio::project::ProjectCard;
+use crate::components::sections::nav_bar::NavBar;
+
+use crate::shared::Projects;
 
 #[function_component]
 pub fn Portfolio() -> Html {
-    let projects = use_state(|| Projects { projects: vec![] });
-
-    {
-        let projects_clone = projects.clone();
-        use_effect_with((), move |_| {
-            spawn_local(async move {
-                let result = fetch_projects().await;
-                let projects_value = match result {
-                    Ok(result) => result,
-                    Err(_) => Projects { projects: vec![] },
-                };
-                projects_clone.set(projects_value);
-            });
-            || ()
-        });
-    }
+    let projects =
+        use_state(
+            || match serde_json::from_str(include_str!("../../static/json/projects.json")) {
+                Ok(projects) => projects,
+                Err(_) => Projects { projects: vec![] },
+            },
+        );
 
     return html! {
-        <div class="flex flex-col p-5 h-screen max-h-screen bg-white dark:bg-gray-950">
-            <a class="text-2xl">{"This will be my portfolio page."}</a>
-            {if projects.projects.is_empty() {
-                html! { <a>{"loading"}</a> }
-            } else {
+        <div>
+            <NavBar />
+            <div class="flex flex-col p-5 h-screen max-h-screen bg-white dark:bg-gray-950">
+                <div class="flex flex-col justify-center items-center w-full lg:h-30 h-64 pb-5">
+                    <a class="lg:text-3xl text-5xl font-bold text-center">{"This is my portfolio"}</a>
+                    <a class="lg:text-xl text-3xl text-center">{"Here you can find all of my relavant projects"}</a>
+                </div>
+                {
                 projects.projects.iter().map(|project| html! {
                     <ProjectCard project={project.clone()} />
                 }).collect::<Html>()
-            }}
+                }
+            </div>
         </div>
     };
 }
