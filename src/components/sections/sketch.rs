@@ -3,7 +3,7 @@ use yew::{Html, function_component, html};
 #[function_component(Code)]
 pub fn code() -> Html {
     html! {
-        <div class="flex font-mono bg-gray-950 text-[#d4d4d4]">
+        <div class="flex font-mono bg-gray-950 text-[#d4d4d4] lg:text-lg text-2xl">
             <pre>
                 <span class="text-[#569cd6]">{"var"}</span>{" "}
                 <span class="text-[#9cdcfe]">{"d"}</span>{" "}
@@ -97,11 +97,11 @@ pub fn Sketch() -> Html {
     return html! {
         <div class="">
             <script>{"myCanvas.parent('canvas-container')"}</script>
-            <h1 class="text-3xl pb-5">{"My first program"}</h1>
-            <p class="text-lg pb-5">{"Here is the first piece of code i wrote, it is a simple p5js sketch."}</p>
+            <h1 class="lg:text-3xl text-5xl lg:pb-5 pb-8">{"My first program"}</h1>
+            <p class="lg:text-lg text-3xl lg:pb-5 pb-8">{"Here is the first piece of code i wrote, it is a simple p5js sketch."}</p>
             <div class="pb-5" id="canvas-container"></div>
-            <div class="h-0 border dark:border-gray-600 border-black my-2"></div>
-            <p class="text-lg pb-5">{"Below is the original code."}</p>
+            <div class="h-0 border dark:border-gray-600 border-black my-5"></div>
+            <p class="lg:text-lg text-3xl lg:pb-5 pb-8">{"Below is the original code."}</p>
             <Code />
         </div>
     };

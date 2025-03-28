@@ -20,17 +20,17 @@ pub fn ProjectCard(params: &ProjectParams) -> Html {
             </div>
             <div class="flex flex-col justify-between h-max w-full">
                 <div class="p-2">
-                    <a class="lg:text-xl text-3xl">{project.title}</a>
+                    <a class="lg:text-xl text-4xl">{project.title}</a>
                     <div class="h-0 border dark:border-gray-600 border-black my-2"></div>
-                    <a class="lg:text-lg text-2xl">{project.discription}</a>
+                    <a class="lg:text-lg text-3xl">{project.discription}</a>
                 </div>
                 <div class="p-2">
-                    <a class="lg:text-xl text-3xl">{"Tech used"}</a>
+                    <a class="lg:text-xl text-4xl">{"Tech used"}</a>
                     <div class="h-0 border dark:border-gray-600 border-black my-2"></div>
                     <div class="flex flex-row flex-wrap">
                     {
                         project.tech_used.iter().map(|name| html! {
-                            <a class="lg:px-3 lg:py-1 px-5 py-2 dark:bg-white bg-black dark:text-gray-950 text-white lg:text-lg text-2xl rounded-full m-1">{name}</a>
+                            <a class="lg:px-3 lg:py-1 px-5 py-2 dark:bg-white bg-black dark:text-gray-950 text-white lg:text-lg text-3xl rounded-full m-1">{name}</a>
                         }).collect::<Html>()
                     }
                     </div>

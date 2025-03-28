@@ -16,8 +16,8 @@ pub struct LinkParams {
 #[function_component]
 pub fn Link(props: &LinkParams) -> Html {
     let applied_style = match props.style {
-        LinkStyle::Primary => "flex items-center justify-center w-max lg:h-10 h-16 ml-2 bg-black dark:bg-gray-300 hover:bg-gray-900 hover:dark:bg-white text-white dark:text-black lg:text-lg text-2xl rounded-md p-2 px-4".to_string(),
-        LinkStyle::Secondary => "flex items-center justify-center w-max lg:h-10 h-16 ml-2 bg-transparent border-2 border-black dark:border-gray-500 hover:bg-gray-200 hover:dark:bg-gray-900 text-black dark:text-white lg:text-lg text-2xl rounded-md p-2 px-4".to_string()
+        LinkStyle::Primary => "flex items-center justify-center w-max lg:h-10 h-18 ml-2 bg-black dark:bg-gray-300 hover:bg-gray-900 hover:dark:bg-white text-white dark:text-black lg:text-lg text-3xl rounded-md p-2 px-4".to_string(),
+        LinkStyle::Secondary => "flex items-center justify-center w-max lg:h-10 h-18 ml-2 bg-transparent border-2 border-black dark:border-gray-500 hover:bg-gray-200 hover:dark:bg-gray-900 text-black dark:text-white lg:text-lg text-3xl rounded-md p-2 px-4".to_string()
     };
 
     return html! {
