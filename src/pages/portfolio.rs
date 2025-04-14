@@ -1,4 +1,4 @@
-use yew::{Html, function_component, html, use_state};
+use yew::{function_component, html, use_state, Html};
 
 use crate::components::portfolio::project::ProjectCard;
 use crate::components::sections::nav_bar::NavBar;
@@ -9,7 +9,7 @@ use crate::shared::Projects;
 pub fn Portfolio() -> Html {
     let projects =
         use_state(
-            || match serde_json::from_str(include_str!("../../static/json/projects.json")) {
+            || match serde_json::from_str(include_str!("../../json/projects.json")) {
                 Ok(projects) => projects,
                 Err(_) => Projects { projects: vec![] },
             },

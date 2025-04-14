@@ -1,4 +1,4 @@
-use yew::{Html, Properties, function_component, html};
+use yew::{function_component, html, Html, Properties};
 
 use crate::components::link::{Link, LinkStyle};
 
@@ -14,9 +14,9 @@ pub fn ProjectCard(params: &ProjectParams) -> Html {
     let project: Project = params.project.clone();
 
     html! {
-        <div class="flex flex-col  sm:flex-row border-4 dark:border-gray-600 border-black rounded-md h-max w-full max-w-full">
+        <div class="flex flex-col mb-4 sm:flex-row border-4 dark:border-gray-600 border-black rounded-md h-max w-full max-w-full">
             <div class="min-h-full w-full sm:w-80 min-w-80 overflow-hidden">
-                <img src={format!("/static/images/{}", project.image)} alt={project.title.clone()} class="h-full w-full object-cover object-left" />
+                <img src={format!("/static/{}", project.image)} alt={project.title.clone()} class="h-full w-full object-cover object-left" />
             </div>
             <div class="flex flex-col justify-between h-max w-full">
                 <div class="p-2">
