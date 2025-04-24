@@ -15,6 +15,14 @@
       "image": "stars-collected.png",
       "live_demo": "",
       "source_code": "https://github.com/Ukcoop/advent-of-code-2024-rs"
+    },
+    {
+      "title": "Rust NN",
+      "discription": "A simple Neural Network library made in rust. (CPU only)",
+      "tech_used": ["Rust", "nalgebra", "Rayon", "Object Oriented Programming"],
+      "image": "xor_problem_run.png",
+      "live_demo": "",
+      "source_code": "https://github.com/Ukcoop/rust-NN"
     }
   ]
 }
