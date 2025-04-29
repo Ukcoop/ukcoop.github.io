@@ -2,8 +2,8 @@
   "projects": [
     {
       "title": "AmazingCal",
-      "discription": "This is a calander web app made with yew and actix web.",
-      "tech_used": ["Rust", "Yew", "Actix web", "Sqlx", "Postgres", "Supabase", "Tailwind css", "Material icons"],
+      "discription": "This is a calendar web app made with yew and actix web.",
+      "tech_used": ["Rust", "Yew", "Actix web", "Tokio", "SQLx", "Postgres", "Supabase", "Tailwind css", "Material icons"],
       "image": "calendar-page.png",
       "live_demo": "",
       "source_code": "https://github.com/Ukcoop/amazingCal"
