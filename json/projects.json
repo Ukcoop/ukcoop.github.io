@@ -18,7 +18,7 @@
     },
     {
       "title": "Rust NN",
-      "discription": "A simple Neural Network library made in rust. (CPU only)",
+      "discription": "A simple Neural Network library made in rust.",
       "tech_used": ["Rust", "nalgebra", "Rayon", "Object Oriented Programming"],
       "image": "xor_problem_run.png",
       "live_demo": "",
